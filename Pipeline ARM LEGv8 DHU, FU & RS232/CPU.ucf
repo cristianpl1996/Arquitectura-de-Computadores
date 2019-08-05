@@ -1,0 +1,4 @@
+NET "clk"   LOC = "B8"; 
+NET "Reset" LOC = "G18"; 
+NET "RX" LOC = "U6"; 
+NET "TX" LOC = "P9"; 
