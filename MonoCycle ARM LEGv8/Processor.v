@@ -423,7 +423,7 @@ module Or(
 endmodule
 
 module DataMemory(
-    input [7:0] Address,
+	input [63:0] Address,
     input [63:0] DataWrite,
     input MemRead,
     input MemWrite,
