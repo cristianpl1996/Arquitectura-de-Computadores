@@ -94,7 +94,7 @@ module Processor(
 	
 endmodule
 
-//Modules.
+//Modules
 	
 module InstructionMemory(
     input [7:0] Address,
