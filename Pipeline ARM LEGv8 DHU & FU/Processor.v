@@ -174,7 +174,7 @@ module Processor(
 
 	And And (Branch_MEM, Zero_MEM, ANDOut);
 	Or Or (Uncondbranch_MEM, ANDOut, OROut);	 
-	DataMemory DataMemory (ALUResult_MEM[7:0], MUXOut6_MEM, MemRead_MEM, MemWrite_MEM, DataReadOut);
+	DataMemory DataMemory (ALUResult_MEM, MUXOut6_MEM, MemRead_MEM, MemWrite_MEM, DataReadOut);
 	
 //	Stage 4/5 - MEM/WB Registers.
 
@@ -776,7 +776,7 @@ module Or(
 endmodule
 
 module DataMemory(
-    input [7:0] Address,
+	input [63:0] Address,
     input [63:0] DataWrite,
     input MemRead,
     input MemWrite,
