@@ -204,9 +204,9 @@ module IF_ID(
 	 input clk,
     input Reset,
 	 input [63:0] PC,
-    input [63:0] Instruction,
+	input [31:0] Instruction,
     output reg[63:0] PC_ID,	 
-    output reg[63:0] Instruction_ID
+	output reg[31:0] Instruction_ID
     );	 
 always@(posedge clk)
 		if (Reset)
